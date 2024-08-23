@@ -1,3 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --primary-bg-and-text: #2F2F2F ;
+    --secondary-bg-and-text: #F6F6F6 ;
+    --input-text: #9E9E9E ;
+    --images-border: #FFFFFF ;
+
+}
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 5.5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-bg-and-text);
+    border-radius: 1rem;
+}
+
+
+  
+
+.nav-links li{
+    position: relative;
+    font-size: 17px;
+    color: var(--secondary-color);
+    transition: .5s ease;
+}
+
+.nav-links li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 2.25px;
+    background-color: var(--primary-bg-and-text);
+    transition: width .5s ease;
+
+}
+
+
+.nav-links li:hover::after,
+.nav-links li.active::after{
+    width: 75%;
+}
+

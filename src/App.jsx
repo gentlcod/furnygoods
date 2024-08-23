@@ -1,31 +1,38 @@
 import LeftSide from "./components/LeftSide"
 import Navbar from "./components/Navbar"
+import ScrollToUpBtn from "./components/ScrollToUpBtn"
 import Home from "./components/Home"
 import Catalogue from "./components/Catalogue"
 import Rating from "./components/Rating"
 import Contact from "./components/Contact"
 
 function App() {
-
   return (
     <>
-     <div className='flex'>
-      {/* Left side - sticky */}
-      <div className="mt-[-1.5rem] sticky top-0 h-screen">
-        <LeftSide />
-      </div>
-      
-      {/* Right side - scrollable */}
-    <Navbar/>
+      <div className='flex'>
+        {/* Left side - sticky */}
+        <div className="sticky top-0 h-screen z-30">
+          <LeftSide />
+        </div>
 
-    <Home />
-    <Catalogue />
-    <Rating />
-    <Contact />
-    
-    </div>
+        {/* Right side - fixed navbar */}
+        <div className="flex-1 relative">
+          <div className="fixed top-0 w-full z-20">
+            <Navbar />
+          </div>
+
+            <Home />
+            <Catalogue />
+            <Rating />
+            <Contact />
+            <ScrollToUpBtn />
+
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
