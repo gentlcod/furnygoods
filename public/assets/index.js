@@ -9,6 +9,7 @@ import RatingPerson1Img from '../assets/joeadams.png'
 import RatingPerson2Img from '../assets/vladapetrov.png'
 import RatingPerson3Img from '../assets/sarahamary.png'
 import RatingPerson4Img from '../assets/taimhosni.png'
+import phoneImg from '../assets/phonemockup.png'
 
 export {
     LuxuryChairImg,
@@ -21,6 +22,7 @@ export {
     RatingPerson1Img,
     RatingPerson2Img,
     RatingPerson3Img,
-    RatingPerson4Img
+    RatingPerson4Img,
+    phoneImg
 
 }
