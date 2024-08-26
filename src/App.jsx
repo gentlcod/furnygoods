@@ -17,7 +17,7 @@ function App() {
 
         {/* Right side - fixed navbar */}
         <div className="flex-1 relative">
-          <div className="fixed top-0 w-full z-20">
+          <div className="bg-[#2f2f2f] pb-3 md:bg-[#ffffff] fixed top-0 w-full z-20">
             <Navbar />
           </div>
 

@@ -66,7 +66,9 @@ const Navbar = () => {
     <div className={`text-[#2f2f2f] py-7 px-12 flex flex-col overflow-y-auto
       ${isSticky ? 'sticky top-0 bg-[#f6f6f6] shadow-md' : ''}
     `}>
-      <ul className='flex items-center justify-between'>
+      <ul className='hidden md:flex items-center justify-between'>
+
+
         <div className='nav-links flex items-center justify-between space-x-10'>
           <li
             className={`cursor-pointer duration-500 ${
@@ -116,9 +118,11 @@ const Navbar = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>
+                <a href="/spanish">
                 <p className='font-medium text-center'>
                   SP
                 </p>
+                </a>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
