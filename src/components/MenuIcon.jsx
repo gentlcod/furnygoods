@@ -36,33 +36,40 @@ const MenuIcon = () => {
     <>
     <div className='md:hidden'>
 
-    <div className='fixed top-0 right-0 w-full h-full z-20 p-6'>
-    <h3 className='text-2xl  text-[#f6f6f6]'>
+    <div className='fixed top-0 right-0 w-full h-full p-6'>
+    <h4 className='text-2xl  text-[#f6f6f6]'
+    onClick={function() {
+      window.scrollTo({top: 0, behavior: 'smooth'})
+    }}>
     <span className='font-bold'>FURNY</span>
     <span className='font-regular'>GOODS</span>
-  </h3>
+  </h4>
     </div>
       {/* Menu Icon for Mobile/Tablet */}
-      <div className='md:hidden fixed top-6 right-6 z-20'>
+      <div className={`md:hidden fixed top-6 right-6 z-20 ${isMenuOpen ? 'hidden' : 'block'}`}>
         <button onClick={handleMenuToggle}>
           <FaBars size={25} color="#f6f6f6" />
         </button>
       </div>
 
-      <div className={`fixed top-0 left-0 w-full h-full z-20 p-6 bg-[#2f2f2f] ${isMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`fixed top-0 left-0 w-full h-full p-6 bg-[#2f2f2f] ${isMenuOpen ? 'block' : 'hidden'}`}>
         {/* Close Menu Button */}
         <button onClick={handleMenuToggle} className='fixed top-0 right-0 p-6 text-[#f6f6f6] mb-8'>
           <IoClose size={31} />
         </button>
 
         {/* Menu Content */}
-        <div className='mb-9'>
+        <div className='mb-9 '>
             <div className='fixed top-0 left-0 p-6'>
-    <h3 className='text-3xl text-[#f6f6f6]'>
+            <h4 className='text-2xl  text-[#f6f6f6]'
+    onClick={function() {
+      window.scrollTo({top: 0, behavior: 'smooth'})
+    }}>
     <span className='font-bold'>FURNY</span>
     <span className='font-regular'>GOODS</span>
-  </h3>
+  </h4>
     </div>
+
           <h1 className='text-[#f6f6f6] text-2xl font-bold mt-16 mb-8'>
             Simple & <br /> Comfort
           </h1>

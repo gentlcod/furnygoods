@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import MenuIcon from './MenuIcon'
+// import MenuIcon from './MenuIcon'
 import { FaArrowRightLong, FaArrowLeftLong, FaBars } from "react-icons/fa6";
 
 const LeftSide = () => {
@@ -25,13 +25,13 @@ const LeftSide = () => {
         {/* Logo */}
         
         <h4 
-  className='cursor-pointer md:block hidden pt-7 my-4 text-[#f6f6f6] bg-[#2f2f2f] md:bg-[#2f2f2f] px-4 md:px-0'
+  className='cursor-pointer md:block hidden pt-7 my-4 text-[#f6f6f6] bg-[#2f2f2f] md:bg-[#2f2f2f] px-2 md:px-0'
   onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
 >
-  <span className='text-2xl font-bold'>
+  <span className='text-3xl font-bold'>
     FURNY
   </span>
-  <span className='text-2xl font-extralight'>
+  <span className='text-3xl font-extralight'>
     GOODS
   </span>
 </h4>
@@ -83,8 +83,7 @@ const LeftSide = () => {
         </div>
       </div>
 
-      {/* LeftSide Content for Mobile/Tablet */}
-      <MenuIcon />
+     
     </>
   );
 }

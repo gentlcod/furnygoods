@@ -33,12 +33,12 @@ const Home = () => {
         <div className='relative md:absolute top-28 md:ml-12 overflow-hidden'>
           <div 
             id="carouselExampleIndicators" 
-            className="carousel slide relative w-full md:w-[290px]" 
+            className="carousel slide relative w-11/12 max-w-xs md:w-[290px]" 
             data-bs-ride="carousel" 
             data-bs-interval="2000"
           >
             {/* Carousel Indicators */}
-            <div className="carousel-indicators absolute md:top-80">
+            <div className="carousel-indicators absolute lg:bottom-[90px] bottom-[57.75px] left-[-31.75px] flex justify-center w-full">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -70,8 +70,8 @@ const Home = () => {
             </div>
 
             {/* Description Text */}
-            <p className='mt-12 text-[#2f2f2f] text-base md:text-lg font-medium text-center md:text-left'>
-              This furniture website lets the <br /> visitors create wish lists.
+            <p className='mt-6 md:mt-12 text-[#2f2f2f] text-base md:text-lg font-medium md:text-left'>
+              This furniture website let the <br /> visitors create wish lists.
             </p>
           </div>
         </div>
@@ -79,41 +79,51 @@ const Home = () => {
         {/* Goods Store Text */}
         <div className='relative flex flex-col items-center md:items-start md:absolute md:right-16 top-28'>
           <div className='flex flex-col items-center md:items-start'>
-            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold text-center md:text-left'>
-              Goods Store!
+            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold lg:mt-0 mt-8 md:text-left'>
+              Goods Store !
             </h5>
 
-            <p className='mt-3 text-[#2f2f2f] text-xl md:text-2xl font-semibold text-center md:text-left'>
+
+            <div className='flex items-center justify-between'>
+            <p className='mt-3 lg:mr-[5.9rem] text-[#2f2f2f] text-xl md:text-2xl font-semibold md:text-left'>
               Start at <br />
               <span className='font-light'>
                 Chair
               </span>
             </p>
-          </div>
 
           <div className='mt-8 md:mt-0'>
-            <h4 className='text-[#2f2f2f] text-3xl md:text-5xl font-medium text-center md:text-right'>
+            <h4 className='text-[#2f2f2f] lg:text-5xl font-medium md:text-right'>
               $59
             </h4>
           </div>
+            </div>
+ 
+          </div>
+
         </div>
       </div>
 
-      {/* Explore Catalogue Chair Box */}
-      <div className='relative flex flex-col items-center mt-20 md:mt-80'>
-        <div className="flex items-center justify-center md:justify-end">
-          <img
-            src={LuxuryChairImg}
-            className="rounded-2xl border-[5px] border-white shadow-2xl w-64 h-64 md:w-[290px] md:h-[290px]"
-            alt="Chair Image"
-          />
-          <div className='absolute cursor-pointer' onClick={handleNavClick('catalogue')}>
-            <p className="flex items-center text-[#f6f6f6] text-sm md:text-md absolute ml-[-5rem] md:ml-[-13rem] mt-[4rem] md:mt-[7rem]">
-              Explore catalogue <FaArrowRightLong size={15} className="ml-2 text-[#f6f6f6]" />
-            </p>
-          </div>
-        </div>
-      </div>
+    {/* Explore Catalogue Chair Box */}
+    <div className='overflow-hidden'>
+
+<div className='relative flex flex-col items-center mt-20 lg:mr-[-27.5rem] md:mt-80'>
+  <div className="flex items-center justify-center md:justify-end">
+    <img
+      src={LuxuryChairImg}
+      className="rounded-2xl border-[5px] border-white shadow-2xl w-11/12 max-w-xs md:w-[290px] md:h-[290px] lg:w-[350px] lg:h-[350px] xl:w-[325px] xl:h-[325px]"
+      alt="Chair Image"
+    />
+    <div className='absolute cursor-pointer' onClick={handleNavClick('catalogue')}>
+      <p className="flex items-center text-[#f6f6f6] absolute text-md ml-[-12rem] md:ml-[-13rem] mt-[4rem] md:mt-[7rem]">
+        Explore catalogue <FaArrowRightLong size={15} className="ml-2" />
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
     </>
   );
 };

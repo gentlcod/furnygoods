@@ -18,7 +18,7 @@ const ScrollToUpBtn = () => {
   };
 
   return (
-    <div className='fixed bottom-6 right-8 z-20'>
+    <div className='fixed lg:bottom-8 bottom-16 right-8 z-20'>
       <div className='flex items-center justify-center bg-[#2f2f2f] rounded-full w-[50px] h-[50px]'>
         <MdOutlineKeyboardDoubleArrowUp
           onClick={handleNavClick('home')}

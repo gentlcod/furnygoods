@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { Dropdown } from 'react-bootstrap';
+import MenuIcon from './MenuIcon'
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -64,7 +66,7 @@ const Navbar = () => {
 
   return (
     <div className={`text-[#2f2f2f] py-7 px-12 flex flex-col overflow-y-auto
-      ${isSticky ? 'sticky top-0 bg-[#f6f6f6] shadow-md' : ''}
+      ${isSticky ? 'sticky top-0 ' : ''}
     `}>
       <ul className='hidden md:flex items-center justify-between'>
 
@@ -135,6 +137,9 @@ const Navbar = () => {
    
         
       </ul>
+
+       {/* LeftSide Content for Mobile/Tablet */}
+       <MenuIcon />
     </div>
   );
   

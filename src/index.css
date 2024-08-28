@@ -63,3 +63,9 @@
     width: 75%;
 }
 
+
+
+.group-hover:text-shadow-md {
+    text-shadow: 4px 6px 8px rgba(0, 0, 0, 1);
+  }
+  
