@@ -27,6 +27,8 @@ const Home = () => {
 
   return (
     <>
+
+
       {/* Bootstrap Carousel Box */}
       <div id='home' className='relative flex flex-col items-center md:flex-row md:justify-between'>
         {/* Carousel Section */}
@@ -70,7 +72,7 @@ const Home = () => {
             </div>
 
             {/* Description Text */}
-            <p className='mt-6 md:mt-12 text-[#2f2f2f] text-base md:text-lg font-medium md:text-left'>
+            <p className='mt-6 md:mt-12 text-[#2f2f2f] text-base lg:ml-0 ml-1 md:text-lg font-medium md:text-left'>
               This furniture website let the <br /> visitors create wish lists.
             </p>
           </div>
@@ -79,13 +81,13 @@ const Home = () => {
         {/* Goods Store Text */}
         <div className='relative flex flex-col items-center md:items-start md:absolute md:right-16 top-28'>
           <div className='flex flex-col items-center md:items-start'>
-            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold lg:mt-0 mt-8 md:text-left'>
+            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold lg:mt-0 lg:mr-0 md:mr-0 mr-[11rem] mt-8 md:text-left'>
               Goods Store !
             </h5>
 
 
-            <div className='flex items-center justify-between'>
-            <p className='mt-3 lg:mr-[5.9rem] text-[#2f2f2f] text-xl md:text-2xl font-semibold md:text-left'>
+            <div className='flex items-center justify-between lg:mb-0 mb-12'>
+            <p className='lg:mt-0 mt-3 lg:mr-[5.9rem] md:mr-0 mr-[14.5rem] text-[#2f2f2f] text-xl md:text-2xl font-semibold md:text-left'>
               Start at <br />
               <span className='font-light'>
                 Chair
@@ -93,7 +95,7 @@ const Home = () => {
             </p>
 
           <div className='mt-8 md:mt-0'>
-            <h4 className='text-[#2f2f2f] lg:text-5xl font-medium md:text-right'>
+            <h4 className='text-[#2f2f2f] lg:text-5xl text-3xl lg:ml-0 ml-[-5.9rem] font-medium md:text-right'>
               $59
             </h4>
           </div>
@@ -107,7 +109,7 @@ const Home = () => {
     {/* Explore Catalogue Chair Box */}
     <div className='overflow-hidden'>
 
-<div className='relative flex flex-col items-center mt-20 lg:mr-[-27.5rem] md:mt-80'>
+<div className='relative flex flex-col items-center mt-20 lg:mr-[-27.5rem] lg:ml-0 ml-[-2rem] md:mt-80'>
   <div className="flex items-center justify-center md:justify-end">
     <img
       src={LuxuryChairImg}
@@ -115,13 +117,15 @@ const Home = () => {
       alt="Chair Image"
     />
     <div className='absolute cursor-pointer' onClick={handleNavClick('catalogue')}>
-      <p className="flex items-center text-[#f6f6f6] absolute text-md ml-[-12rem] md:ml-[-13rem] mt-[4rem] md:mt-[7rem]">
+      <p className="flex items-center text-[#f6f6f6] absolute text-md w-[300px] lg:ml-[-12rem] md:ml-[-13rem] ml-[-3rem] md:mt-[7rem] mt-[8rem]">
         Explore catalogue <FaArrowRightLong size={15} className="ml-2" />
       </p>
     </div>
   </div>
 </div>
 </div>
+
+
 
 
     </>

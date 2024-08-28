@@ -4,13 +4,13 @@ import { ChairCategoryImg, Sofa2CategoryImg, LuxuryChairImg, SofaCategoryImg } f
 
 const Catalogue = () => {
   return (
-    <div id='catalogue' className='ml-16 mt-[15rem] mb-[7rem] py-7'>
-      <h3 className='text-2xl text-[#2f2f2f] font-semibold'>
+    <div id='catalogue' className='lg:ml-12 sm:ml-16 ml-6 mt-[15rem] mb-[7rem] py-7'>
+      <h3 className='lg:ml-[-31.7rem] text-2xl text-[#2f2f2f] sm:text-center font-semibold'>
         Most Popular This Year
       </h3>
 
      {/* Categories Boxes */}
-<div className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+     <div className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4'>
   {/* Category 1 */}
   <div className='relative bg-[#FFFFFF] p-1 w-[230px] rounded-xl shadow-lg group'>
     <img 

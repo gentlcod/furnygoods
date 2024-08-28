@@ -10,8 +10,8 @@ import {
 
 const Rating = () => {
   return (
-    <div id='rating' className='ml-16 mt-[15rem] mb-[7rem] py-7'>
-      <h3 className='text-2xl text-[#2f2f2f] font-semibold'>
+    <div id='rating' className='lg:ml-12 md:ml-0 sm:ml-32 ml-6 mt-[15rem] mb-[7rem] py-7'>
+      <h3 className='lg:ml-[3px] text-2xl text-[#2f2f2f] sm:ml-[8.5rem] font-semibold'>
         Popular Rates
       </h3>
 

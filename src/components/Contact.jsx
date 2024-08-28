@@ -10,14 +10,14 @@ import { IoLocationSharp } from "react-icons/io5";
 const Contact = () => {
   return (
     <>
-      <div id='contact' className='ml-4 mt-[5rem] mb-[7rem] py-7'>
+      <div id='contact' className=' ml-4 mt-[5rem] mb-[7rem] py-7'>
         <div className='flex flex-col lg:flex-row items-center lg:items-start'>
           {/* Image and Socials Section */}
           <div className='flex flex-col items-center lg:items-start'>
             <img 
               src={phoneImg} 
               width={310}
-              className='mb-10 lg:mb-0'
+              className='mb-10 lg:mb-0 lg:mr-0 md:mr-0 sm:mr-0 mr-20'
               alt="Phone Mockup Contact" 
             />
             {/* Socials Contact */}
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
 
                 <div className='flex items-center'>
-                  <FaClock size={22} className='mr-2'/> 
+                  <FaClock size={22} className='mr-2 mt-[-5.5rem]'/> 
                   <p className='text-xs'>
                     Mon | 9.00 - 17.00 
                     <br /> Tue &nbsp; | 9.00 - 17.00 
@@ -77,8 +77,8 @@ const Contact = () => {
           </div>
 
           {/* Message Form Section */}
-          <div className='flex flex-col mt-32 lg:mt-0 lg:ml-20 w-full max-w-xs'>
-            <h3 className='my-4 text-center text-[#2f2f2f] font-semibold text-2xl'>
+          <div className='z-20 flex flex-col mt-32 lg:mt-0 lg:ml-20 w-full max-w-xs'>
+            <h3 className='my-4 lg:text-center sm:text-center text-[#2f2f2f] font-semibold text-2xl'>
               Ask anything
             </h3>
             <form 
