@@ -68,7 +68,7 @@ const Navbar = () => {
     <div className={`text-[#2f2f2f] py-7 px-12 flex flex-col overflow-y-auto
       ${isSticky ? 'sticky top-0 ' : ''}
     `}>
-      <ul className='hidden md:flex items-center justify-between'>
+      <ul className='hidden xl:flex items-center justify-between'>
 
 
         <div className='nav-links flex items-center justify-between space-x-10'>

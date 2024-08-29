@@ -8,11 +8,10 @@ const LeftSide = () => {
   return (
     <>
       {/* LeftSide Content for Larger Screens */}
-      <div className={`w-[600px] mt-[-1.5rem] pl-24 bg-[#2f2f2f] h-[100vh] z-10 relative hidden md:block`}>
-        {/* Logo */}
-        
+      <div className={`w-[600px] mt-[-1.5rem] pl-24 bg-[#2f2f2f] h-[100vh] z-10 relative hidden xl:block`}>
+        {/* Logo */}  
         <h4 
-  className='cursor-pointer md:block hidden pt-7 my-4 text-[#f6f6f6] bg-[#2f2f2f] md:bg-[#2f2f2f] px-2 md:px-0'
+  className='cursor-pointer md:block hidden pt-7 my-4 text-[#f6f6f6] bg-[#2f2f2f] px-2 md:px-0'
   onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
 >
   <span className='text-3xl font-bold'>

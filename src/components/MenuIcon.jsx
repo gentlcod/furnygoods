@@ -34,7 +34,7 @@ const MenuIcon = () => {
 
   return (
     <>
-    <div className='md:hidden'>
+    <div className='xl:hidden'>
 
     <div className='fixed top-0 right-0 w-full h-full p-6'>
     <h4 className='cursor-pointer text-2xl  text-[#f6f6f6]'
@@ -44,7 +44,7 @@ const MenuIcon = () => {
   </h4>
     </div>
       {/* Menu Icon for Mobile/Tablet */}
-      <div className={`md:hidden fixed top-6 right-6 ${isMenuOpen ? 'hidden' : 'block'}`}>
+      <div className={`xl:hidden fixed top-6 right-6 ${isMenuOpen ? 'hidden' : 'block'}`}>
         <button onClick={handleMenuToggle}>
           <FaBars size={25} color="#f6f6f6" />
         </button>
@@ -61,7 +61,8 @@ const MenuIcon = () => {
             <div className='fixed top-0 left-0 p-6'>
             <h4 className='cursor-pointer text-2xl  text-[#f6f6f6]'
     onClick={function() {
-      window.scrollTo({top: 0, behavior: 'smooth'})
+      window.scrollTo({top: 0, behavior: 'smooth'});
+      setIsMenuOpen(false); // Close the menu
     }}>
     <span className='font-bold'>FURNY</span>
     <span className='font-regular'>GOODS</span>
@@ -71,7 +72,7 @@ const MenuIcon = () => {
           <h1 className='text-[#f6f6f6] text-2xl font-bold mt-16 mb-8'>
             Simple & <br /> Comfort
           </h1>
-          <div className='w-[3px] bg-[#f6f6f6] h-full' />
+          
 
 
           <ul className='flex flex-col text-[#f6f6f6] items-start justify-start space-y-6'>

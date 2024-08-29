@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'ipad-pro' : {'max' : '1024px'}
+      }
+    },
   },
   plugins: [],
 }

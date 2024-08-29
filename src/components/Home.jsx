@@ -79,9 +79,9 @@ const Home = () => {
         </div>
 
         {/* Goods Store Text */}
-        <div className='relative flex flex-col items-center md:items-start md:absolute md:right-16 top-28'>
+        <div className='relative flex flex-col items-center md:items-start md:absolute md:right-32 lg:right-16 top-28'>
           <div className='flex flex-col items-center md:items-start'>
-            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold lg:mt-0 lg:mr-0 md:mr-0 mr-[11rem] mt-8 md:text-left'>
+            <h5 className='text-[#2f2f2f] text-xl md:text-2xl font-semibold xl:mt-0 xl:mr-0 lg:mt-0 lg:mr-64 md:mr-0 mr-[11rem] mt-8 md:text-left'>
               Goods Store !
             </h5>
 
@@ -95,7 +95,7 @@ const Home = () => {
             </p>
 
           <div className='mt-8 md:mt-0'>
-            <h4 className='text-[#2f2f2f] lg:text-5xl text-3xl lg:ml-0 ml-[-5.9rem] font-medium md:text-right'>
+            <h4 className='text-[#2f2f2f] lg:text-5xl md:text-4xl text-3xl lg:ml-0 md:ml-[7.5rem] ml-[-5.9rem] font-medium md:text-right'>
               $59
             </h4>
           </div>
@@ -109,7 +109,7 @@ const Home = () => {
     {/* Explore Catalogue Chair Box */}
     <div className='overflow-hidden'>
 
-<div className='relative flex flex-col items-center mt-20 lg:mr-[-27.5rem] lg:ml-0 ml-[-2rem] md:mt-80'>
+<div className='relative flex flex-col items-center mt-20 lg:mr-[-27.5rem] xl:ml-0 lg:ml-[-7rem] md:ml-[17.5rem] ml-[-2rem] md:mt-80'>
   <div className="flex items-center justify-center md:justify-end">
     <img
       src={LuxuryChairImg}

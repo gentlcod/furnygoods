@@ -21,7 +21,7 @@ const Contact = () => {
               alt="Phone Mockup Contact" 
             />
             {/* Socials Contact */}
-            <div className='lg:ml-[5rem] ml-[.3rem] lg:mt-[-28rem] mt-[-29rem]'>
+            <div className='lg:ml-[5rem] sm:ml-[-.1rem] ml-[-5.3rem] lg:mt-[-28rem] mt-[-31rem]'>
               <h3 className='text-[#2f2f2f] text-xl'>
                 <span className='font-bold'>FURNY</span>
                 <span className='font-regular'> GOODS</span>
