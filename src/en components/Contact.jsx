@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
 
           {/* Message Form Section */}
-          <div className='z-20 flex flex-col mt-32 lg:mt-0 lg:ml-20 w-full max-w-xs'>
+          <div className='flex flex-col mt-32 lg:mt-0 lg:ml-20 w-full max-w-xs'>
             <h3 className='my-4 lg:text-center sm:text-center text-[#2f2f2f] font-semibold text-2xl'>
               Ask anything
             </h3>

@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { Dropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import MenuIcon from './MenuIcon'
 
 
@@ -109,7 +110,7 @@ const Navbar = () => {
           </li>
 
                {/* Languages Menu */}
-        <div className=''>
+      
           <Dropdown>
             <Dropdown.Toggle 
               variant="success" 
@@ -119,16 +120,19 @@ const Navbar = () => {
               EN
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item>
-                <a href="/spanish">
-                <p className='font-medium text-center'>
+              <Dropdown.Item className='xl:mt-[-.5rem]'>
+            <Link to='/sp' >
+
+                  <p className='font-medium text-center'>
                   SP
-                </p>
-                </a>
+                  </p>
+              </Link>
+
               </Dropdown.Item>
+
             </Dropdown.Menu>
           </Dropdown>
-        </div>
+     
 
         
         </div>

@@ -1,10 +1,12 @@
+/* eslint-disable react/no-unknown-property */
  
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { Dropdown } from 'react-bootstrap';
+// import { Dropdown } from 'react-bootstrap';
 import { IoClose } from "react-icons/io5";
 import { FaArrowRightLong, FaArrowLeftLong, FaBars } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const MenuIcon = () => {
 
@@ -37,10 +39,9 @@ const MenuIcon = () => {
     <div className='xl:hidden'>
 
     <div className='fixed top-0 right-0 w-full h-full p-6'>
-    <h4 className='cursor-pointer text-2xl  text-[#f6f6f6]'
-     onClick={handleNavClick('home')}>
-    <span className='font-bold'>FURNY</span>
-    <span className='font-regular'>GOODS</span>
+    <h4 className='cursor-pointer text-2xl  text-[#f6f6f6]'>
+    <span className='font-bold' onClick={handleNavClick('home')}>FURNY</span>
+    <span className='font-regular' onClick={handleNavClick('home')}>GOODS</span>
   </h4>
     </div>
       {/* Menu Icon for Mobile/Tablet */}
@@ -110,26 +111,16 @@ const MenuIcon = () => {
             </li>
 
             {/* Languages Menu */}
-            <div className='mt-6'>
-              <Dropdown>
-                <Dropdown.Toggle
-                  variant="success"
-                  id="dropdown-basic"
-                  className="bg-[#2f2f2f] hover:bg-[#2f2f2f] text-[#f6f6f6] border-none font-semibold"
-                >
-                  EN
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item>
-                    <a href="/spanish">
-                      <p className='font-medium text-center'>
-                        SP
-                      </p>
-                    </a>
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
+           
+              <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle font-semibold bg-[#2f2f2f] text-[#f6f6f6] p-2 rounded-md" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            EN
+          </a>
+          <ul className="dropdown-menu">
+            <li><Link to="/sp" className="dropdown-item font-semibold" >SP</Link></li>
+         
+          </ul>
+        </li>
           </ul>
 
           <br />

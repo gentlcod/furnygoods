@@ -1,38 +1,22 @@
-import LeftSide from "./components/LeftSide"
-import Navbar from "./components/Navbar"
-import ScrollToUpBtn from "./components/ScrollToUpBtn"
-import Home from "./components/Home"
-import Catalogue from "./components/Catalogue"
-import Rating from "./components/Rating"
-import Contact from "./components/Contact"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SpanishPage from "./routes/SpanishPage";
+import EnglishPage from './routes/EnglishPage'
 
 function App() {
   return (
     <>
-      <div className='flex'>
-        {/* Left side - sticky */}
-        <div className="sticky top-0 h-screen z-30">
-          <LeftSide />
-        </div>
+      <Router>
+       
+            {/* Routes and other content */}
+              <Routes>
+                <Route path="/" element={<EnglishPage />} />
+                <Route path="/en" element={<EnglishPage />} />
+                <Route path="/sp" element={<SpanishPage />} />
+              </Routes>
 
-        {/* Right side - fixed navbar */}
-        <div className="flex-1 relative">
-          <div className="bg-[#2f2f2f] pb-3 xl:bg-[#ffffff] fixed top-0 w-full z-20">
-            <Navbar />
-          </div>
-
-            <Home />
-            <Catalogue />
-            <Rating />
-            <Contact />
-            <ScrollToUpBtn />
-
-        </div>
-      </div>
+      </Router>
     </>
   );
 }
 
 export default App;
-
-
