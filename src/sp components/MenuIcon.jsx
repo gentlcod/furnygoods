@@ -1,14 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 // import { Dropdown } from 'react-bootstrap';
 import React, { useState, useEffect, useRef } from 'react';
 import { IoClose } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { FaArrowRightLong, FaArrowLeftLong, FaBars } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const MenuIcon = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState('home');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Estado para gestionar la visibilidad del menú desplegable
@@ -27,9 +25,6 @@ const MenuIcon = () => {
     setIsMenuOpen(false); // Cerrar el menú al hacer clic
   };
 
-  const handleAboutClick = () => {
-    setIsExpanded(!isExpanded);
-  };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -143,23 +138,7 @@ const MenuIcon = () => {
               Este sitio web de muebles permite a los visitantes<br />crear listas de deseos para sus artículos favoritos,<br />lo que ayuda a honrar.
             </p>
 
-            <button
-              onClick={handleAboutClick}
-              className='flex items-center bg-[#f6f6f6] py-2 px-6 rounded-2xl text-[#2f2f2f] font-regular mt-4'
-            >
-              Sobre Nosotros {isExpanded ? <FaArrowLeftLong className='ml-2' size={12} /> : <FaArrowRightLong className='ml-2' size={12} />}
-            </button>
-
-            {/* Sección Expansible para Móviles/Tablet */}
-            <div className={`text-[#f6f6f6] transition-all duration-500 ease-in-out ${isExpanded ? 'mt-4' : 'hidden'}`}>
-              <p className='text-sm font-regular tracking-wide'>
-                Bienvenido a <span>FURNYGOODS.</span>
-                <br /><br />
-                Tu destino definitivo para muebles elegantes<br />y funcionales. Nos especializamos en ofrecer una selección<br />curada de sillas, mesas y muebles para el hogar<br />que combinan comodidad con diseño.
-                <br />Ya sea que estés buscando actualizar<br />tu espacio vital o añadir un toque de<br />elegancia a tu oficina, FurnyGoods<br />tiene algo para cada gusto.
-                <br />Descubre la calidad de la artesanía y<br />la estética moderna con nosotros. Transform<br />tu espacio, una pieza a la vez.
-              </p>
-            </div>
+          
           </div>
         </div>
       </div>
