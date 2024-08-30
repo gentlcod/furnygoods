@@ -1,14 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 // import { Dropdown } from 'react-bootstrap';
 import React, { useState, useEffect, useRef } from 'react';
 import { IoClose } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { FaArrowRightLong, FaArrowLeftLong, FaBars } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const MenuIcon = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeNavLink, setActiveNavLink] = useState('home');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
@@ -25,10 +23,6 @@ const MenuIcon = () => {
       });
     }
     setIsMenuOpen(false); // Close the menu on click
-  };
-
-  const handleAboutClick = () => {
-    setIsExpanded(!isExpanded);
   };
 
   const handleMenuToggle = () => {
@@ -145,23 +139,7 @@ const MenuIcon = () => {
               This furniture website lets visitors<br />create wish lists for their favorite<br />items, which help honor.
             </p>
 
-            <button
-              onClick={handleAboutClick}
-              className='flex items-center bg-[#f6f6f6] py-2 px-6 rounded-2xl text-[#2f2f2f] font-regular mt-4'
-            >
-              About Us {isExpanded ? <FaArrowLeftLong className='ml-2' size={12} /> : <FaArrowRightLong className='ml-2' size={12} />}
-            </button>
-
-            {/* Expanding section for Mobile/Tablet */}
-            <div className={`text-[#f6f6f6] transition-all duration-500 ease-in-out ${isExpanded ? 'mt-4' : 'hidden'}`}>
-              <p className='text-sm font-regular tracking-wide'>
-                Welcome to <span>FURNYGOODS.</span>
-                <br /><br />
-                Your ultimate destination for stylish<br />and functional furniture. We specialize<br />in offering a curated selection of<br />chairs, tables, and home furnishings<br />that blend comfort with design.
-                <br />Whether you're looking to upgrade<br />your living space or add a touch of<br />elegance to your office, FurnyGoods<br />has something for every taste.
-                <br />Discover quality craftsmanship and<br />modern aesthetics with us. Transform<br />your space, one piece at a time.
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>
