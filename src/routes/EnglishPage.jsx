@@ -20,7 +20,7 @@ const EnglishPage = () => {
           {/* Right side */}
           <div className="flex-1 relative">
             {/* Fixed Navbar */}
-            <div className="bg-[#2f2f2f] pb-3 xl:bg-[#ffffff] fixed top-0 w-full h-[70px] z-10">
+            <div className="pb-3 fixed top-0 w-full h-[70px] z-20">
               <Navbar />
             </div>
 

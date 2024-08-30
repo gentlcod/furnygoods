@@ -5,7 +5,6 @@ import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MenuIcon from './MenuIcon'
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -71,7 +70,6 @@ const Navbar = () => {
     `}>
       <ul className='hidden xl:flex items-center justify-between'>
 
-
         <div className='nav-links flex items-center justify-between space-x-10'>
           <li
             className={`cursor-pointer duration-500 ${
@@ -79,7 +77,7 @@ const Navbar = () => {
             }`}
             onClick={handleNavClick('home')}
           >
-            Home
+            Inicio
           </li>
           <li
             style={{ marginLeft: '4rem' }}
@@ -88,7 +86,7 @@ const Navbar = () => {
             }`}
             onClick={handleNavClick('catalogue')}
           >
-            Catalogue
+            Catálogo
           </li>
           <li
             style={{ marginLeft: '4rem' }}
@@ -97,7 +95,7 @@ const Navbar = () => {
             }`}
             onClick={handleNavClick('rating')}
           >
-            Rating
+            Calificación
           </li>
           <li
             style={{ marginLeft: '4rem' }}
@@ -106,48 +104,38 @@ const Navbar = () => {
             }`}
             onClick={handleNavClick('contact')}
           >
-            Contact
+            Contacto
           </li>
 
-               {/* Languages Menu */}
-      
+          {/* Menú de Idiomas */}
           <Dropdown>
             <Dropdown.Toggle 
               variant="success" 
               id="dropdown-basic" 
-              className="bg-[#2f2f2f] hover:bg-[#2f2f2f] text-[#f6f6f6] border-none font-semibold lg:ml-48 overflow-hidden"
+              className="bg-[#2f2f2f] hover:bg-[#2f2f2f] text-[#f6f6f6] border-none font-semibold lg:ml-[9.42rem] overflow-hidden"
             >
-              EN
+              SP
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item className='xl:mt-[-.5rem]'>
-            <Link to='/sp' >
-
+                <Link to='/en'>
                   <p className='font-medium text-center'>
-                  SP
+                    EN
                   </p>
-              </Link>
-
+                </Link>
               </Dropdown.Item>
-
             </Dropdown.Menu>
           </Dropdown>
-     
 
-        
         </div>
-        
-  
-   
-        
+
       </ul>
 
-       {/* Menu Icon for Mobile/Tablet/Ipad.. */}
-       <MenuIcon />
-       
+      {/* Icono de Menú para Móviles/Tablet/Ipad.. */}
+      <MenuIcon />
+
     </div>
   );
-  
 };
 
 export default Navbar;

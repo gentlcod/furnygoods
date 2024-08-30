@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
@@ -26,7 +25,7 @@ const About = () => {
             </button>
 
             {/* Expanding section */}
-            <div className={`fixed bg-[#2f2f2f] text-[#f6f6f6] transition-all duration-500 ease-in-out ${isExpanded ? 'left-[37.5rem] top-0 w-[calc(100vw-600px)] h-[100vh] z-20' : 'transform translate-x-[-600px]'}`}>
+            <div className={`fixed bg-[#2f2f2f] text-[#f6f6f6] transition-all duration-500 ease-in-out ${isExpanded ? 'left-[37.5rem] top-0 w-[calc(100vw-600px)] h-[100vh] z-10' : 'transform translate-x-[-600px]'}`}>
               {isExpanded && (
                 <p className='text-md font-regular ml-48 mt-36 tracking-wide'>
                   Welcome to <span>FURNYGOODS.</span>

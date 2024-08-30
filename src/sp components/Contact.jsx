@@ -18,7 +18,7 @@ const Contact = () => {
               src={phoneImg} 
               width={310}
               className='mb-10 lg:mb-0 lg:mr-0 md:mr-0 sm:mr-0 mr-20'
-              alt="Phone Mockup Contact" 
+              alt="Maqueta de Teléfono Contacto" 
             />
             {/* Socials Contact */}
             <div className='lg:ml-[5rem] sm:ml-[-.1rem] ml-[-5.3rem] lg:mt-[-28rem] mt-[-31rem]'>
@@ -30,22 +30,22 @@ const Contact = () => {
               <div className='mt-4'>
                 <div className='flex items-center mb-2'>
                   <FaLinkedin size={19} className='mr-2'/> 
-                  <p className='text-xs'>LinkedIn Account</p>
+                  <p className='text-xs'>Cuenta de LinkedIn</p>
                 </div>
 
                 <div className='flex items-center mb-2'>
                   <AiFillInstagram size={22} className='mr-2'/> 
-                  <p className='text-xs'>Instagram Account</p>
+                  <p className='text-xs'>Cuenta de Instagram</p>
                 </div>
 
                 <div className='flex items-center mb-2'>
                   <FaSquareXTwitter size={19} className='mr-2'/> 
-                  <p className='text-xs'>Twitter/x Account</p>
+                  <p className='text-xs'>Cuenta de Twitter/x</p>
                 </div>
 
                 <div className='flex items-center mb-2'>
                   <IoLogoFacebook size={22} className='mr-2'/> 
-                  <p className='text-xs'>Facebook Account</p>
+                  <p className='text-xs'>Cuenta de Facebook</p>
                 </div>
 
                 <div className='flex items-center mb-2'>
@@ -56,20 +56,20 @@ const Contact = () => {
                 <div className='flex items-center mb-2'>
                   <IoLocationSharp size={22} className='mr-2'/> 
                   <p className='text-xs'>
-                    Location - Address <br /> No - Building
+                    Ubicación - Dirección <br /> No - Edificio
                   </p>
                 </div>
 
                 <div className='flex items-center'>
                   <FaClock size={22} className='mr-2 mt-[-5.5rem]'/> 
                   <p className='text-xs'>
-                    Mon | 9.00 - 17.00 
-                    <br /> Tue &nbsp; | 9.00 - 17.00 
-                    <br /> Wed | 9.00 - 17.00 
-                    <br /> Thur | 9.00 - 17.00 
-                    <br /> Fri &nbsp;&nbsp;&nbsp; | 9.00 - 17.00 
-                    <br /> Sat &nbsp; | 9.00 - 13.00 
-                    <br /> Sun &nbsp; | closed
+                    Lun | 9.00 - 17.00 
+                    <br /> Mar | 9.00 - 17.00 
+                    <br /> Mié | 9.00 - 17.00 
+                    <br /> Jue | 9.00 - 17.00 
+                    <br /> Vie | 9.00 - 17.00 
+                    <br /> Sáb | 9.00 - 13.00 
+                    <br /> Dom | cerrado
                   </p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
           {/* Message Form Section */}
           <div className='flex flex-col mt-32 lg:mt-0 lg:ml-20 w-full max-w-xs'>
             <h3 className='my-4 lg:text-center sm:text-center text-[#2f2f2f] font-semibold text-2xl'>
-              Ask anything
+              Pregunta lo que desees
             </h3>
             <form 
               action="https://formsubmit.co/your@email.com" 
@@ -89,35 +89,35 @@ const Contact = () => {
               <input 
                 type="text" 
                 name="name" 
-                placeholder="Full Name" 
+                placeholder="Nombre Completo" 
                 required 
                 className="text-[#4F4F4F] placeholder-[#9E9E9E] p-2 shadow-md rounded-2xl"
               />
               <input 
                 type="email" 
                 name="email" 
-                placeholder="Email" 
+                placeholder="Correo Electrónico" 
                 required 
                 className="text-[#4F4F4F] placeholder-[#9E9E9E] p-2 shadow-md rounded-2xl"
               />
               <input 
                 type="text" 
                 name="title" 
-                placeholder="Title" 
+                placeholder="Asunto" 
                 required 
                 className="text-[#4F4F4F] placeholder-[#9E9E9E] p-2 shadow-md rounded-2xl"
               />
               <textarea 
                 rows={5} 
                 id="query" 
-                placeholder='Your Query' 
+                placeholder='Tu Consulta' 
                 className='text-[#4F4F4F] placeholder-[#9E9E9E] rounded-2xl shadow-md p-2' 
               />
               <button 
                 type="submit" 
                 className="p-2 mt-3 bg-[#2f2f2f] text-center text-[#F6F6F6] rounded-2xl"
               >
-                Send Message
+                Enviar Mensaje
               </button>
             </form>
           </div>
@@ -126,7 +126,7 @@ const Contact = () => {
 
       {/* Copyright */}
       <p className='text-[#2f2f2f] text-center mb-4'>
-        &copy; 2024 All Rights Reserved By Furnygoods
+        &copy; 2024 Todos los Derechos Reservados por Furnygoods
       </p>
     </>
   )
